@@ -6,10 +6,3 @@ describe DockingStation do
 
    
 end
-
-describe Bike do 
-  
-
-end
-
-#it { is_expected.to respond_to :working? }
