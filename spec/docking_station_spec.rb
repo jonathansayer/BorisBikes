@@ -1,4 +1,5 @@
 require 'docking_station'
+require 'support/shared_examples_for_bike_container'
 
 describe DockingStation do
 
@@ -23,11 +24,11 @@ describe DockingStation do
       expect { subject.release_bike }.to raise_error 'No bikes available'
     end    
   end
-
+  
   describe 'dock' do
     it 'raise an error when full' do
       subject.capacity.times { subject.dock double :bike }
-      expect { subject.dock double :bike }.to raise_error 'Docking station full'
+      expect { subject.dock double :bike }.to raise_error 'DockingStation full'
     end
   end
     

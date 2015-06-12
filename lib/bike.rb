@@ -14,8 +14,13 @@ class Bike
     self.working = false
   end
 
+  def fix
+    self.working = true
+  end
+
   def broken?
     not working
   end
 
 end
+
